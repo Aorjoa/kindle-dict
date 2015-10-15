@@ -11,10 +11,12 @@ oldWord = ""
 for doc in root.findall("Doc"):
     try:
         word = doc.find("esearch").text
+        ecat = doc.find("ecat").text
+        tentry = doc.find("tentry").text
         if oldWord != word:
             writeFile("\r\n" + word + "\t")
             oldWord = word
-        writeFile("(" + doc.find("ecat").text + ") " + doc.find("tentry").text + "<br>") 
+        writeFile("(" + ecat + ") " + tentry + "<br>") 
         entryThai = doc.find("ethai").text
         writeFile("<b><i>" + entryThai + "</i></b><br>")
         syn = doc.find("esyn").text
@@ -22,6 +24,8 @@ for doc in root.findall("Doc"):
             writeFile("Syn : " + syn + "<br>")
     except AttributeError:
         pass
+    except TypeError:
+        continue
     
 f.close()
 print("SUCCESS")

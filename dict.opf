@@ -23,10 +23,15 @@
 
 <!-- list of all the files needed to produce the .prc file -->
 <manifest>
- <item href="cover.jpg" id="cover-image" media-type="image/jpeg"/>
- <item href="setup.jpg" id="setup-image" media-type="image/jpeg"/>
-  <item id="setup" href="setup-page.html" media-type="text/x-oeb1-document"/>
- <item id="dictionary0" href="dict0.html" media-type="text/x-oeb1-document"/>
+ 	<item href="cover.jpg" id="cover-image" media-type="image/jpeg"/>
+ 	<item href="setup.jpg" id="setup-image" media-type="image/jpeg"/>
+ 	<item id="setup" href="setup-page.html" media-type="text/x-oeb1-document"/>
+	<item id="dictionary0" href="dict0.html" media-type="text/x-oeb1-document"/>
+	<item id="dictionary1" href="dict1.html" media-type="text/x-oeb1-document"/>
+	<item id="dictionary2" href="dict2.html" media-type="text/x-oeb1-document"/>
+    <item id="dictionary3" href="dict3.html" media-type="text/x-oeb1-document"/>
+    <item id="dictionary4" href="dict4.html" media-type="text/x-oeb1-document"/>
+	<item id="dictionary5" href="dict5.html" media-type="text/x-oeb1-document"/>
 </manifest>
 
 
@@ -34,6 +39,11 @@
 <spine>
 	<itemref idref="setup"/>
 	<itemref idref="dictionary0"/>
+	<itemref idref="dictionary1"/>
+	<itemref idref="dictionary2"/>
+	<itemref idref="dictionary3"/>
+	<itemref idref="dictionary4"/>
+	<itemref idref="dictionary5"/>
 </spine>
 
 <tours/>

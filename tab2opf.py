@@ -295,7 +295,7 @@ for r in fr.xreadlines():
             </html>
             """)
             to.close()
-        to = open("%s%d.html" % (name, i / 2500), 'w')
+        to = open("%s%d.html" % (name, i / 10000), 'w')
 
         to.write("""<?xml version="1.0" encoding="utf-8"?>
 <html xmlns:idx="www.i-aor.com" xmlns:mbp="www.i-aor.com" xmlns:xlink="http://www.w3.org/1999/xlink">
