@@ -14,7 +14,7 @@
 		<dc:Creator opf:file-as="Bhuridech Sudsee" opf:role="pb1">Bhuridech Sudsee</dc:Creator>
 	</dc-metadata>
 	<x-metadata>
-
+		<output encoding="utf-8" flatten-dynamic-dir="yes"/>
 		<DictionaryInLanguage>en-US</DictionaryInLanguage>
 		<DictionaryOutLanguage>th</DictionaryOutLanguage>
 	</x-metadata>
